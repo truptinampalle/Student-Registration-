@@ -1,0 +1,290 @@
+/* Universal CSS */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f0f4f8;
+    color: #333;
+}
+
+/* Header */
+
+.header {
+    background: #123c69;
+    color: white;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    text-align: center;
+}
+
+.logo img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.header h1 {
+    font-size: 32px;
+}
+
+.header p {
+    margin-top: 8px;
+}
+
+/* Navbar */
+
+.navbar {
+    background: #1a7af0;
+    padding: 18px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    font-size: 17px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.navbar a:hover {
+    color: yellow;
+    transform: translateY(-3px);
+}
+
+/* Common Section */
+
+section {
+    padding: 55px 20px;
+    text-align: center;
+}
+
+section h2 {
+    color: #123c69;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.subtitle {
+    margin-bottom: 25px;
+    color: #666;
+}
+
+/* Home */
+
+.home {
+    background: linear-gradient(120deg, #d9eaff, #ffffff);
+    padding: 100px 20px;
+}
+
+.home h2 {
+    font-size: 40px;
+}
+
+.home p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.btn {
+    display: inline-block;
+    background: #1a7af0;
+    color: white;
+    padding: 13px 25px;
+    text-decoration: none;
+    border-radius: 6px;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #123c69;
+    transform: scale(1.05);
+}
+
+/* About */
+
+.about {
+    background: white;
+}
+
+.about p {
+    max-width: 750px;
+    margin: auto;
+    line-height: 1.8;
+    font-size: 17px;
+}
+
+/* Courses */
+
+.courses {
+    background: #eef5ff;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 25px;
+    max-width: 1100px;
+    margin: auto;
+}
+
+.card {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+    transition: 0.4s;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+.card img {
+    width: 100%;
+    height: 140px;
+    object-fit: contain;
+    border-radius: 8px;
+}
+
+.card h3 {
+    color: #1a7af0;
+    margin: 15px 0;
+    font-size: 23px;
+}
+
+.card p {
+    margin-bottom: 12px;
+}
+
+.card span {
+    color: #123c69;
+    font-weight: bold;
+}
+
+/* Registration */
+
+.registration {
+    background: white;
+}
+
+form {
+    background: #f5f8fc;
+    max-width: 550px;
+    margin: auto;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.12);
+    text-align: left;
+}
+
+form label {
+    display: block;
+    margin: 15px 0 8px;
+    font-weight: bold;
+}
+
+form input,
+form select,
+form textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #bbb;
+    border-radius: 6px;
+    font-size: 15px;
+    outline: none;
+}
+
+form input:focus,
+form select:focus,
+form textarea:focus {
+    border-color: #1a7af0;
+}
+
+form button {
+    width: 100%;
+    padding: 14px;
+    margin-top: 20px;
+    background: #1a7af0;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 17px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+form button:hover {
+    background: #123c69;
+}
+
+#message {
+    text-align: center;
+    color: green;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+/* Contact */
+
+.contact {
+    background: #dceaff;
+}
+
+.contact p {
+    margin: 12px;
+    font-size: 17px;
+}
+
+/* Footer */
+
+footer {
+    background: #123c69;
+    color: white;
+    text-align: center;
+    padding: 22px;
+}
+
+/* Mobile Responsive */
+
+@media (max-width: 600px) {
+
+    .header {
+        flex-direction: column;
+    }
+
+    .header h1 {
+        font-size: 25px;
+    }
+
+    .navbar {
+        gap: 18px;
+    }
+
+    .navbar a {
+        font-size: 14px;
+    }
+
+    .home h2 {
+        font-size: 30px;
+    }
+
+    form {
+        padding: 20px;
+    }
+
+}
